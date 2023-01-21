@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "Ozone";
+  src: local("Ozone"),
+  url("./assets/fonts/Ozone/Ozone-xRRO.ttf") format("truetype");
+  font-weight: normal;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

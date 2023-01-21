@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamScore component test suite match the snapshot 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg team-score-container css-1oqqzyl-MuiContainer-root"
+  >
+    <div
+      class="ts-data-box ts-status MuiBox-root css-0"
+    >
+      Home
+    </div>
+    <div
+      class="ts-data-box country-name MuiBox-root css-0"
+    >
+      <img
+        alt="Country flag"
+        class="ts-flag"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1200px-Flag_of_Venezuela.svg.png"
+      />
+      Venezuela
+    </div>
+    <div
+      class="ts-data-box MuiBox-root css-0"
+    >
+      <div
+        class="score MuiBox-root css-0"
+      >
+        <div
+          class="score-text"
+        >
+          10
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

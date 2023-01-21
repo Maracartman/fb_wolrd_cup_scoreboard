@@ -1,0 +1,45 @@
+.team-score-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid rgba(255, 255, 255, 0.733);
+    border-radius: 10px;
+    padding: 1vw;
+    background-color: rgb(4, 39, 7);
+}
+
+.ts-data-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 3vw;
+    color: aliceblue;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+}
+
+.ts-status {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 8vw;
+    color: rgb(219, 201, 141);
+}
+
+.country-name {
+    display: flex;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.733);
+    text-transform: capitalize;
+    font-size: 5vw;
+}
+
+.ts-flag {
+    padding: 1vw;
+    display: flex;
+    width: 6vw;
+    height: 4vw;
+}

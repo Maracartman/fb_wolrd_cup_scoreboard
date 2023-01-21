@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button'
 import logo from './logo.svg';
+import './assets/fonts/Ozone/Ozone-xRRO.ttf';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';

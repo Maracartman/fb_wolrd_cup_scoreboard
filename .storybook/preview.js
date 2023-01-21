@@ -1,3 +1,6 @@
+import React from 'react'
+import TranslationsProvider from '../src/contexts/translations'
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +10,11 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => (
+    <TranslationsProvider>
+      {Story()}
+    </TranslationsProvider>
+  ),
+];
