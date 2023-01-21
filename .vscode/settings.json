@@ -1,0 +1,5 @@
+{
+    "jestrunner.jestCommand": "yarn test:nowatch",
+    "jestrunner.configPath": "",
+    "jestrunner.jestPath": "./node_modules/.bin/react-scripts"
+}
