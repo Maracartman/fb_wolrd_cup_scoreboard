@@ -1,5 +1,8 @@
 {
     "jestrunner.jestCommand": "yarn test:nowatch",
     "jestrunner.configPath": "",
-    "jestrunner.jestPath": "./node_modules/.bin/react-scripts"
+    "jestrunner.jestPath": "./node_modules/.bin/react-scripts",
+    "cSpell.words": [
+        "Maracartman"
+    ]
 }

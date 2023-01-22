@@ -16,7 +16,7 @@ describe('Match class test suite', () => {
 
         expect(match.totalScore).toBe(0)
         expect(match.homeTeamScore.score).toBe(0)
-        expect(match.visitorTeamScore.score).toBe(0)
+        expect(match.awayTeamScore.score).toBe(0)
     })
 
     it("returns operation completed when a goal registration is made for a valid match's team", () => {
@@ -41,7 +41,7 @@ describe('Match class test suite', () => {
         match.registerGoals(homeTeam.country)
 
         expect(match.homeTeamScore.score).toBe(1)
-        expect(match.visitorTeamScore.score).toBe(7)
+        expect(match.awayTeamScore.score).toBe(7)
     })
 
     it('accumulate all goals as the total of the match', () => {

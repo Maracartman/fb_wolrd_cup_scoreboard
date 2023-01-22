@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scoreboard component test suite match the snapshot 1`] = `
+<div>
+  <div
+    class="scoreboard-container MuiBox-root css-0"
+  >
+    <div
+      class="scoreboard-title MuiBox-root css-0"
+    >
+      Scoreboard
+    </div>
+    <div
+      class="team-scores-container MuiBox-root css-0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg team-score-container css-1oqqzyl-MuiContainer-root"
+      >
+        <div
+          class="ts-data-box ts-status MuiBox-root css-0"
+        >
+          Home
+        </div>
+        <div
+          class="ts-data-box country-name MuiBox-root css-0"
+        >
+          ---
+        </div>
+        <div
+          class="ts-data-box MuiBox-root css-0"
+        >
+          <div
+            class="score MuiBox-root css-0"
+          >
+            <div
+              class="score-text"
+            >
+              00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg team-score-container css-1oqqzyl-MuiContainer-root"
+      >
+        <div
+          class="ts-data-box ts-status MuiBox-root css-0"
+        >
+          Away
+        </div>
+        <div
+          class="ts-data-box country-name MuiBox-root css-0"
+        >
+          ---
+        </div>
+        <div
+          class="ts-data-box MuiBox-root css-0"
+        >
+          <div
+            class="score MuiBox-root css-0"
+          >
+            <div
+              class="score-text"
+            >
+              00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

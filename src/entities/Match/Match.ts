@@ -6,7 +6,7 @@ export class Match {
    
     private _homeTeamScore: TeamScore;
    
-    private _visitorTeamScore: TeamScore;
+    private _awayTeamScore: TeamScore;
 
     private _countries = Array<String>(2)
     
@@ -15,7 +15,7 @@ export class Match {
         const awayScore = scores?.away ?? 0
         this._totalScore = homeScore + awayScore
         this._homeTeamScore = { team: homeTeam, score: homeScore}
-        this._visitorTeamScore = { team: awayTeam, score: awayScore}
+        this._awayTeamScore = { team: awayTeam, score: awayScore}
         this._countries[0] = homeTeam.country
         this._countries[1] = awayTeam.country
     }
@@ -27,11 +27,11 @@ export class Match {
         this._homeTeamScore = value;
     }
 
-    public get visitorTeamScore(): TeamScore {
-        return this._visitorTeamScore;
+    public get awayTeamScore(): TeamScore {
+        return this._awayTeamScore;
     }
-    public set visitorTeamScore(value: TeamScore) {
-        this._visitorTeamScore = value;
+    public set awayTeamScore(value: TeamScore) {
+        this._awayTeamScore = value;
     }
 
     public get totalScore(): number {
@@ -42,10 +42,10 @@ export class Match {
         if(countryIndex >= 0){
             const total = numberOfGoals ?? 1
             this._totalScore += total
-            if(this.homeTeamScore.team.country === countryName){
-                this.homeTeamScore.score += total
+            if(this._homeTeamScore && this._homeTeamScore.team?.country === countryName){
+                this._homeTeamScore.score = (this._homeTeamScore?.score || 0) + total
             } else {
-                this.visitorTeamScore.score += total
+                this._awayTeamScore.score = (this._awayTeamScore?.score || 0) + total
             }
             return true
         }

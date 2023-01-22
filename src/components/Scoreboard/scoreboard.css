@@ -1,0 +1,22 @@
+.scoreboard-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #052707;
+    justify-content: space-around;
+}
+
+.team-scores-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.scoreboard-title {
+    color: aliceblue;
+    font-size: 20vw;
+    font-weight: bolder;
+    font-family: monospace;
+    overflow-wrap: break-word;
+}

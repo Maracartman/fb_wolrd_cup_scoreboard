@@ -1,15 +1,13 @@
 import { ReactElement, createContext, useContext } from "react";
 import COPIES from 'src/config/copies.json'
 
-export type TypeTranslationsContext = {
-    homeCopy: string,
-    awayCopy: string
+export const defaultCopies = {
+    homeCopy: "",
+    awayCopy: "",
+    scoreboardCopy: ""
 }
 
-const TranslationsContext = createContext<TypeTranslationsContext>({
-    homeCopy: "",
-    awayCopy: ""
-})
+const TranslationsContext = createContext<typeof defaultCopies>(defaultCopies)
 
 const TranslationsProvider =  ({children}: { children: ReactElement }) => <TranslationsContext.Provider value={COPIES}>{children}</TranslationsContext.Provider>
 

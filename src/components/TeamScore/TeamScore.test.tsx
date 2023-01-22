@@ -47,4 +47,18 @@ describe("TeamScore component test suite", () => {
 
     expect(screen.getByAltText("Country flag")).toBeInTheDocument()
   })
+
+  it("display a neutral state (neither team name nor score) if no team is passed", () => {
+    const noTeamProps = {
+      home: true,
+      team: undefined,
+      score: 10,
+    }
+
+    render(<TeamScore {...noTeamProps} />)
+
+    expect(screen.queryByAltText("Country flag")).not.toBeInTheDocument()
+    expect(screen.getByText("---")).toBeInTheDocument()
+    expect(screen.getByText("00")).toBeInTheDocument()
+  })
 });

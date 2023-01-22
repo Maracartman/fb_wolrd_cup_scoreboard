@@ -1,4 +1,3 @@
-import { Team, TeamScore } from 'src/types'
 import { Match } from '../Match/Match'
 import MatchList from './MatchList'
 import matchesSample from 'src/__tests__/examples/matches.json'

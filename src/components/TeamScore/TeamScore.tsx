@@ -16,10 +16,15 @@ export const TeamScore = ({
     <Container className='team-score-container'>
       <Box className={'ts-data-box ts-status'}>{teamStatus}</Box>
       <Box className={'ts-data-box country-name'}>
+        {!team ?
+          "---"
+        : <>
         {team.flagImage && (<img className='ts-flag' alt='Country flag' src={team.flagImage}/>)}
           {team.country}
+        </>
+        }
       </Box>
-      <Box className='ts-data-box'><Score score={score}/></Box>
+      <Box className='ts-data-box'><Score score={team && score ? score : 0}/></Box>
     </Container>
   );
 };

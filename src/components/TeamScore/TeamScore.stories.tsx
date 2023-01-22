@@ -23,9 +23,17 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof TeamScore> = (args) => <TeamScore {...args} />
 
-export const  Sample = Template.bind({});
+
+export const NoTeamDefinedSample = Template.bind({})
+
+NoTeamDefinedSample.args = {
+  home: true,
+  team: undefined,
+}
+
+export const  awayTeamSample = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Sample.args = teamScoreProps;
+awayTeamSample.args = teamScoreProps;
 
 export const HomeSample = Template.bind({})
 
