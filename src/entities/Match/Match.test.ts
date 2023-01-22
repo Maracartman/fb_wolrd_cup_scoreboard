@@ -1,5 +1,5 @@
 import { Team } from 'src/types'
-import { Match } from './Match/Match'
+import { Match } from './Match'
 
 describe('Match class test suite', () => {
     const awayTeam: Team = {
@@ -22,29 +22,23 @@ describe('Match class test suite', () => {
     it("returns operation completed when a goal registration is made for a valid match's team", () => {
         const match = new Match(homeTeam,awayTeam)
 
-        const result = match.registerGoal("Germany")
+        const result = match.registerGoals("Germany")
         expect(result).toBeTruthy()
     })
 
     it("returns operation fails when a goal registration is made for a invalid match's team", () => {
         const match = new Match(homeTeam,awayTeam)
 
-        const result = match.registerGoal("Netherlands")
+        const result = match.registerGoals("Netherlands")
         expect(result).toBeFalsy()
     })
 
-    it('adds goal for both team when it is registered to the match', () => {
+    it('adds multiple goals for both team when it is registered to the match', () => {
         const match = new Match(homeTeam,awayTeam)
 
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
+        match.registerGoals(awayTeam.country, 7)
 
-        match.registerGoal(homeTeam.country)
+        match.registerGoals(homeTeam.country)
 
         expect(match.homeTeamScore.score).toBe(1)
         expect(match.visitorTeamScore.score).toBe(7)
@@ -53,15 +47,9 @@ describe('Match class test suite', () => {
     it('accumulate all goals as the total of the match', () => {
         const match = new Match(homeTeam,awayTeam)
 
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
-        match.registerGoal(awayTeam.country)
+        match.registerGoals(awayTeam.country, 7)
 
-        match.registerGoal(homeTeam.country)
+        match.registerGoals(homeTeam.country)
 
         expect(match.totalScore).toBe(8)
     })

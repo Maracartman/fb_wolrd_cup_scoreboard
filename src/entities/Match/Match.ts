@@ -37,14 +37,15 @@ export class Match {
     public get totalScore(): number {
         return this._totalScore;
     }
-    public registerGoal(countryName: string): boolean {
+    public registerGoals(countryName: string, numberOfGoals?: number): boolean {
         const countryIndex = this._countries.indexOf(countryName)
         if(countryIndex >= 0){
-            this._totalScore+=1
+            const total = numberOfGoals ?? 1
+            this._totalScore += total
             if(this.homeTeamScore.team.country === countryName){
-                this.homeTeamScore.score+=1
+                this.homeTeamScore.score += total
             } else {
-                this.visitorTeamScore.score+=1
+                this.visitorTeamScore.score += total
             }
             return true
         }
