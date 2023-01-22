@@ -3,12 +3,12 @@ import COPIES from 'src/config/copies.json'
 
 export type TypeTranslationsContext = {
     homeCopy: string,
-    visitorCopy: string
+    awayCopy: string
 }
 
 const TranslationsContext = createContext<TypeTranslationsContext>({
-    homeCopy: "Home",
-    visitorCopy: "Visitor"
+    homeCopy: "",
+    awayCopy: ""
 })
 
 const TranslationsProvider =  ({children}: { children: ReactElement }) => <TranslationsContext.Provider value={COPIES}>{children}</TranslationsContext.Provider>

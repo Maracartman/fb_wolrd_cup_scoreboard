@@ -1,0 +1,28 @@
+[{
+    "home": {
+        "country": "Mexico",
+        "score": 0
+    },
+    "away": {
+        "country": "Canada",
+        "score": 5
+    }
+},{
+    "home": {
+        "country": "Spain",
+        "score": 10
+    },
+    "away": {
+        "country": "Brasil",
+        "score": 2
+    }
+},{
+    "home": {
+        "country": "Uruguay",
+        "score": 6
+    },
+    "away": {
+        "country": "Italia",
+        "score": 6
+    }
+}]

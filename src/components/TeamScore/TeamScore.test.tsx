@@ -6,7 +6,7 @@ const teamScoreProps = {
     home: true,
     team: {
       country: "Venezuela",
-      flagHref:
+      flagImage:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1200px-Flag_of_Venezuela.svg.png",
     },
     score: 10,
@@ -36,10 +36,10 @@ describe("TeamScore component test suite", () => {
     expect(screen.getByText("Home")).toBeInTheDocument()
   });
 
-  it('Display the text "Visitor" in the team score', () => {
+  it('Display the text "Away" in the team score', () => {
     render(<TeamScore {...teamScoreProps} home={false}/>)
 
-    expect(screen.getByText("Visit")).toBeInTheDocument()
+    expect(screen.getByText("Away")).toBeInTheDocument()
   });
 
   it("display the country flag if it's passed", () => {
