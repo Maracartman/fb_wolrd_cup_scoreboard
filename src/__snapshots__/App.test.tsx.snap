@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container scoreboard-page css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-grid-xs-12 scoreboard-container css-1nuw9uu-MuiGrid-root"
+          >
+            <div
+              class="scoreboard-title MuiBox-root css-0"
+            >
+              Scoreboard
+            </div>
+            <div
+              class="team-scores-container MuiBox-root css-0"
+            >
+              <div
+                class="MuiContainer-root MuiContainer-maxWidthLg team-score-container css-1oqqzyl-MuiContainer-root"
+              >
+                <div
+                  class="ts-data-box ts-status MuiBox-root css-0"
+                >
+                  Home
+                </div>
+                <div
+                  class="ts-data-box country-name MuiBox-root css-0"
+                >
+                  ---
+                </div>
+                <div
+                  class="ts-data-box MuiBox-root css-0"
+                >
+                  <div
+                    class="score MuiBox-root css-0"
+                  >
+                    <div
+                      class="score-text"
+                    >
+                      00
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiContainer-root MuiContainer-maxWidthLg team-score-container css-1oqqzyl-MuiContainer-root"
+              >
+                <div
+                  class="ts-data-box ts-status MuiBox-root css-0"
+                >
+                  Away
+                </div>
+                <div
+                  class="ts-data-box country-name MuiBox-root css-0"
+                >
+                  ---
+                </div>
+                <div
+                  class="ts-data-box MuiBox-root css-0"
+                >
+                  <div
+                    class="score MuiBox-root css-0"
+                  >
+                    <div
+                      class="score-text"
+                    >
+                      00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-grid-xs-12 css-1nuw9uu-MuiGrid-root"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg control-panel css-1oqqzyl-MuiContainer-root"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium css-ke5b6m-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Simulate a random Match
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium Mui-disabled MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            Finish and add to summary
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

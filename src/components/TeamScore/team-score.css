@@ -1,12 +1,16 @@
+@media (max-width: 600px) {
+    .team-score-container {
+        max-width: 100% !important;
+    }
+  }
 .team-score-container {
-    max-width: 50%;
+    max-width: 50% !important;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     border-radius: 10px;
     padding: 1vw;
-    background-color: rgb(4, 39, 7);
 }
 
 .ts-data-box {
@@ -15,7 +19,7 @@
     font-family: monospace;
     font-weight: bold;
     font-size: x-large;
-    padding: 3vw;
+    padding: .3vw;
     color: aliceblue;
     justify-content: center;
     vertical-align: middle;
@@ -26,7 +30,8 @@
 .ts-status {
     display: flex;
     text-transform: capitalize;
-    font-size: 15vw;
+    font-size: 2vw;
+    height: fit-content;
     color: rgb(219, 201, 141);
 }
 
@@ -34,12 +39,11 @@
     display: flex;
     border-bottom: 3px solid rgba(255, 255, 255, 0.733);
     text-transform: capitalize;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 .ts-flag {
     padding: 1vw;
     display: flex;
-    width: 6vw;
-    height: 4vw;
+    width: 80px;
 }

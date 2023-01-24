@@ -3,7 +3,7 @@
 exports[`Scoreboard component test suite match the snapshot 1`] = `
 <div>
   <div
-    class="scoreboard-container MuiBox-root css-0"
+    class="MuiGrid-root MuiGrid-grid-xs-12 scoreboard-container css-vj1n65-MuiGrid-root"
   >
     <div
       class="scoreboard-title MuiBox-root css-0"

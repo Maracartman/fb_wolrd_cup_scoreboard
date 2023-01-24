@@ -128,3 +128,6 @@ yarn-error.log*
 
 # Old elements
 *.old*
+
+#storybook
+storybook-static

@@ -38,18 +38,18 @@ describe("MatchList test suite", () => {
         const matchList = new MatchList()
         const mexicoVCanadaMatch = mapSampleToMatch(matchesSample[0])
         const spainVBrasilMatch = mapSampleToMatch(matchesSample[1])
-        const uruguayVItaliaMatch = mapSampleToMatch(matchesSample[2])
+        const germanyVFrance = mapSampleToMatch(matchesSample[2])
 
         matchList.insert(mexicoVCanadaMatch)
         matchList.insert(spainVBrasilMatch)
-        matchList.insert(uruguayVItaliaMatch)
+        matchList.insert(germanyVFrance)
 
         const headNode = matchList.head
         const secondNode = headNode?.next
         const thirdNode = secondNode?.next
 
-        expect(headNode?.match).toEqual(uruguayVItaliaMatch)
-        expect(secondNode?.match).toEqual(spainVBrasilMatch)
-        expect(thirdNode?.match).toEqual(mexicoVCanadaMatch)
+        expect(headNode?.match).toEqual(spainVBrasilMatch)
+        expect(secondNode?.match).toEqual(mexicoVCanadaMatch)
+        expect(thirdNode?.match).toEqual(germanyVFrance)
     })
 })

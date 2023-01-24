@@ -4,7 +4,9 @@ import COPIES from 'src/config/copies.json'
 export const defaultCopies = {
     homeCopy: "",
     awayCopy: "",
-    scoreboardCopy: ""
+    scoreboardCopy: "",
+    randomMatchCopy: "",
+    endMatchCopy: ""
 }
 
 const TranslationsContext = createContext<typeof defaultCopies>(defaultCopies)

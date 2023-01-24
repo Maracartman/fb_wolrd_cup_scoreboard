@@ -1,5 +1,7 @@
 {
     "homeCopy": "Home",
     "awayCopy": "Away",
-    "scoreboardCopy": "Scoreboard"
+    "scoreboardCopy": "Scoreboard",
+    "randomMatchCopy": "Simulate a random Match",
+    "endMatchCopy": "Finish and add to summary"
 }

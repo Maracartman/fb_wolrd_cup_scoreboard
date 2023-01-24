@@ -1,11 +1,11 @@
 {
   "name": "fb_wolrd_cup_scoreboard",
-  "version": "0.1.0-alpha.0",
+  "version": "1.1.0",
   "description": "A world Cup Scoreboard example",
   "main": "index.js",
   "repository": "git@github.com-personal:Maracartman/fb_wolrd_cup_scoreboard.git",
   "author": "Luis Maracara <luis.maracara1@gmail.com>",
-  "license": "Luis Maracara",
+  "license": "ISC",
   "private": false,
   "scripts": {
     "start": "react-scripts start",
